@@ -1,3 +1,9 @@
+# This project has been inspired by https://github.com/judygab/web-dev-projects/tree/main/personal-portfolio
+
+# The video tutorial available here: https://www.youtube.com/watch?v=hYv6BM2fWd8&t
+
+# This project is used for teaching and study purposes only.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
