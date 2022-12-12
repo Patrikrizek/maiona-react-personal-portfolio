@@ -1,8 +1,14 @@
-# This project has been inspired by https://github.com/judygab/web-dev-projects/tree/main/personal-portfolio
+# This project has been inspired by:
 
-# The video tutorial available here: https://www.youtube.com/watch?v=hYv6BM2fWd8&t
+https://github.com/judygab/web-dev-projects/tree/main/personal-portfolio
 
-# This project is used for teaching and study purposes only.
+# The video tutorial available here:
+
+https://www.youtube.com/watch?v=hYv6BM2fWd8&t
+
+# This project is used for:
+
+teaching and study purposes only
 
 # Getting Started with Create React App
 
