@@ -1,31 +1,46 @@
+import Navbar from 'react-bootstrap/Navbar';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
 
 const NavBar = () => {
 
   return (
-    <Navbar bg="light" expand="lg">
-      <Container>
-        <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#link">Link</Nav.Link>
-            <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Separated link
-              </NavDropdown.Item>
-            </NavDropdown>
+    <Navbar expand="lg">
+      <Container fluid>
+        <Navbar.Brand href="#">
+          <img src={''} alt="logo" />
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="navbarScroll">
+          <span className="navbar-toggler-icon"></span>
+        </Navbar.Toggle>
+        <Navbar.Collapse id="navbarScroll">
+          <Nav
+            className="me-auto my-2 my-lg-0"
+            style={{ maxHeight: '100px' }}
+            navbarScroll
+          >
+            <Nav.Link
+              href="#home">
+              Home
+            </Nav.Link>
+
+            <Nav.Link href="#skills">
+              Skills
+            </Nav.Link>
+
+            <Nav.Link
+              href="#projects">
+              Projects
+            </Nav.Link>
           </Nav>
+          <span className="navbar-text">
+            <div className="social-icon">
+              <a href="#"><img src={''} alt="Socials icon 1" /></a>
+              <a href="#"><img src={''} alt="Socials icon 2" /></a>
+              <a href="#"><img src={''} alt="Socials icon 3" /></a>
+            </div>
+            <button className="vvs"><span>Let's Connect</span></button>
+          </span>
         </Navbar.Collapse>
       </Container>
     </Navbar>
