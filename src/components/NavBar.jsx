@@ -70,7 +70,7 @@ const NavBar = () => {
               <a href="#"><img src={navIcon2} alt="Socials icon 2" /></a>
               <a href="#"><img src={navIcon3} alt="Socials icon 3" /></a>
             </div>
-            <button className="vvs"><span>Let's Connect</span></button>
+            <button className="vvs" onClick={() => console.log('connect')}><span>Let's Connect</span></button>
           </span>
         </Navbar.Collapse>
       </Container>
