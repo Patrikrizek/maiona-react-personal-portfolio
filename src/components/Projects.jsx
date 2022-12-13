@@ -61,20 +61,7 @@ const Projects = () => {
                             <Tab.Content id="slideInUp">
                                 <Tab.Pane eventKey="first">
                                     <Row>
-
-                                        <ProjectCard />
-
-                                        <Col size={12} sm={6} md={4}>
-                                            <div className="proj-imgbx">
-                                                <img src={projects[0].imgUrl} />
-                                                <div className="proj-txtx">
-                                                    <h4>{projects[0].title}</h4>
-                                                    <span>{projects[0].description}</span>
-                                                </div>
-                                            </div>
-                                        </Col>
-
-
+                                        <ProjectCard project={projects[0]} />
                                     </Row>
                                 </Tab.Pane>
 
