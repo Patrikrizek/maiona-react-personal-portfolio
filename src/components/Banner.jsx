@@ -1,4 +1,5 @@
 import { Container, Row, Col } from "react-bootstrap";
+import headerImg from "../assets/img/header-img.svg";
 
 const Banner = () => {
     return (
@@ -13,7 +14,7 @@ const Banner = () => {
                     </Col>
 
                     <Col xs={12} md={6} xl={5}>
-                        <img src={''} alt="Header image" />
+                        <img src={headerImg} alt="Header image" />
                     </Col>
                 </Row>
             </Container>
