@@ -61,7 +61,16 @@ const Projects = () => {
                             <Tab.Content id="slideInUp">
                                 <Tab.Pane eventKey="first">
                                     <Row>
-                                        <ProjectCard project={projects[0]} />
+                                        {
+                                            projects.map((project, index) => {
+                                                return (
+                                                    <ProjectCard
+                                                        key={index}
+                                                        {...project}
+                                                    />
+                                                )
+                                            })
+                                        }
                                     </Row>
                                 </Tab.Pane>
 

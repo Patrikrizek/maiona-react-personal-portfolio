@@ -1,13 +1,13 @@
 import { Col } from "react-bootstrap";
 
-const ProjectCard = ({ project }) => {
+const ProjectCard = ({ title, description, imgUrl }) => {
     return (
         <Col size={12} sm={6} md={4}>
             <div className="proj-imgbx">
-                <img src={project.imgUrl} />
+                <img src={imgUrl} />
                 <div className="proj-txtx">
-                    <h4>{project.title}</h4>
-                    <span>{project.description}</span>
+                    <h4>{title}</h4>
+                    <span>{description}</span>
                 </div>
             </div>
         </Col>
