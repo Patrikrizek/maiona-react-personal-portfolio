@@ -59,7 +59,17 @@ const Projects = () => {
                             </Nav>
                             <Tab.Content id="slideInUp">
                                 <Tab.Pane eventKey="first">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
+                                    <Row>
+                                        <Col size={12} sm={6} md={4}>
+                                            <div className="proj-imgbx">
+                                                <img src={projects[0].imgUrl} />
+                                                <div className="proj-txtx">
+                                                    <h4>{projects[0].title}</h4>
+                                                    <span>{projects[0].description}</span>
+                                                </div>
+                                            </div>
+                                        </Col>
+                                    </Row>
                                 </Tab.Pane>
 
                                 <Tab.Pane eventKey="second">
