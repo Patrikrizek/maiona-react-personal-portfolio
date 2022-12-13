@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Navbar from 'react-bootstrap/Navbar';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
@@ -7,6 +8,11 @@ import navIcon2 from '../assets/img/nav-icon2.svg';
 import navIcon3 from '../assets/img/nav-icon3.svg';
 
 const NavBar = () => {
+  const [activeLink, setActiveLink] = useState('home');
+
+  const onUpdateActiveLink = value => {
+    setActiveLink(value);
+  }
 
   return (
     <Navbar expand="lg">
@@ -24,16 +30,22 @@ const NavBar = () => {
             navbarScroll
           >
             <Nav.Link
-              href="#home">
+              href="#home"
+              className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'}
+              onClick={() => onUpdateActiveLink('home')}>
               Home
             </Nav.Link>
 
-            <Nav.Link href="#skills">
+            <Nav.Link href="#skills"
+              className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'}
+              onClick={() => onUpdateActiveLink('home')}>
               Skills
             </Nav.Link>
 
             <Nav.Link
-              href="#projects">
+              href="#projects"
+              className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'}
+              onClick={() => onUpdateActiveLink('home')}>
               Projects
             </Nav.Link>
           </Nav>
