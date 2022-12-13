@@ -29,11 +29,23 @@ const Skills = () => {
                     <div className="col-12">
                         <div className="skill-bx wow zoomIn">
                             <h2>Skills</h2>
-                            <Carousel responsive={responsive}>
-                                <div>Item 1</div>
-                                <div>Item 2</div>
-                                <div>Item 3</div>
-                                <div>Item 4</div>
+                            <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
+                                <div className="item">
+                                    <img src={''} alt="Image" />
+                                    <h5>Web Development</h5>
+                                </div>
+                                <div className="item">
+                                    <img src={''} alt="Image" />
+                                    <h5>Brand Identity</h5>
+                                </div>
+                                <div className="item">
+                                    <img src={''} alt="Image" />
+                                    <h5>Logo Design</h5>
+                                </div>
+                                <div className="item">
+                                    <img src={''} alt="Image" />
+                                    <h5>Web Development</h5>
+                                </div>
                             </Carousel>
                         </div>
                     </div>
