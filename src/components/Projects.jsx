@@ -3,6 +3,7 @@ import projImg1 from "../assets/img/project-img1.png";
 import projImg2 from "../assets/img/project-img2.png";
 import projImg3 from "../assets/img/project-img3.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
+import ProjectCard from "./ProjectCard";
 
 const Projects = () => {
     const projects = [
@@ -60,6 +61,9 @@ const Projects = () => {
                             <Tab.Content id="slideInUp">
                                 <Tab.Pane eventKey="first">
                                     <Row>
+
+                                        <ProjectCard />
+
                                         <Col size={12} sm={6} md={4}>
                                             <div className="proj-imgbx">
                                                 <img src={projects[0].imgUrl} />
@@ -69,6 +73,8 @@ const Projects = () => {
                                                 </div>
                                             </div>
                                         </Col>
+
+
                                     </Row>
                                 </Tab.Pane>
 
