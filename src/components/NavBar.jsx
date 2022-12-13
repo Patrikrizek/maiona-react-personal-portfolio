@@ -1,6 +1,10 @@
 import Navbar from 'react-bootstrap/Navbar';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
+import logo from '../assets/img/logo.svg';
+import navIcon1 from '../assets/img/nav-icon1.svg';
+import navIcon2 from '../assets/img/nav-icon2.svg';
+import navIcon3 from '../assets/img/nav-icon3.svg';
 
 const NavBar = () => {
 
@@ -8,7 +12,7 @@ const NavBar = () => {
     <Navbar expand="lg">
       <Container fluid>
         <Navbar.Brand href="#">
-          <img src={''} alt="logo" />
+          <img src={logo} alt="logo" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll">
           <span className="navbar-toggler-icon"></span>
@@ -35,9 +39,9 @@ const NavBar = () => {
           </Nav>
           <span className="navbar-text">
             <div className="social-icon">
-              <a href="#"><img src={''} alt="Socials icon 1" /></a>
-              <a href="#"><img src={''} alt="Socials icon 2" /></a>
-              <a href="#"><img src={''} alt="Socials icon 3" /></a>
+              <a href="#"><img src={navIcon1} alt="Socials icon 1" /></a>
+              <a href="#"><img src={navIcon2} alt="Socials icon 2" /></a>
+              <a href="#"><img src={navIcon3} alt="Socials icon 3" /></a>
             </div>
             <button className="vvs"><span>Let's Connect</span></button>
           </span>
