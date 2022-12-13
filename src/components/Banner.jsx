@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { ArrowRightCircle } from "react-bootstrap-icons";
 import headerImg from "../assets/img/header-img.svg";
@@ -11,6 +11,14 @@ const Banner = () => {
     const [index, setIndex] = useState(1);
     const toRotate = ["Web Developer", "Web Designer", "UI/UX Designer"];
     const period = 2000;
+
+    useEffect(() => {
+        let ticker = setInterval(() => {
+            tick();
+        }, delta);
+
+        return () => { clearInterval(ticker) };
+    }, [text])
 
     const tick = () => {
         let i = loopNum % toRotate.length;
