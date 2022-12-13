@@ -4,7 +4,20 @@ import { ArrowRightCircle } from "react-bootstrap-icons";
 import headerImg from "../assets/img/header-img.svg";
 
 const Banner = () => {
+    const [loopNum, setLoopNum] = useState(1);
+    const [isDeleting, setIsDeleting] = useState(false);
     const [text, setText] = useState('');
+    const [index, setIndex] = useState(1);
+    const toRotate = ["Web Developer", "Web Designer", "UI/UX Designer"];
+    const period = 2000;
+
+    const tick = () => {
+        let i = loopNum % toRotate.length;
+        let fullText = toRotate[i];
+        let updatedText = isDeleting ? fullText.substring(0, text.length - 1) : fullText.substring(0, text.length + 1);
+
+        setText(updatedText);
+    }
 
     return (
         <section className="banner" id="home">
