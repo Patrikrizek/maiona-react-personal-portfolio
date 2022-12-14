@@ -17,7 +17,7 @@ const Newsletter = ({ status, message, onValidated }) => {
                     <Col md={6} xl={7}>
                         <form>
                             <div className="new-email-bx">
-                                <input value={email} type="email" placeholder="Email Address" />
+                                <input value={email} type="email" placeholder="Email Address" onChange={(e) => setEmail(e.target.value)} />
                                 <button type="submit">Submit</button>
                             </div>
                         </form>
