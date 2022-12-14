@@ -1,6 +1,9 @@
+import { useState } from "react";
 import { Col, Row, Alert } from "react-bootstrap";
 
 const Newsletter = ({ status, message, onValidated }) => {
+    const [email, setEmail] = useState('');
+
     return (
         <Col lg={12}>
             <div className="newsletter-bx wow slideInUp">
@@ -14,7 +17,7 @@ const Newsletter = ({ status, message, onValidated }) => {
                     <Col md={6} xl={7}>
                         <form>
                             <div className="new-email-bx">
-                                <input value={''} type="email" placeholder="Email Address" />
+                                <input value={email} type="email" placeholder="Email Address" />
                                 <button type="submit">Submit</button>
                             </div>
                         </form>
