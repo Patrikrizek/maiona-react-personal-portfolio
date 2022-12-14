@@ -13,6 +13,7 @@ const Contact = () => {
 
     const [formDetails, setFormDetails] = useState(formInitialDetails);
     const [buttonText, setButtonText] = useState('Send');
+    const [status, setStatus] = useState({});
 
     return (
         <section className='contact' id="contact" >
@@ -45,6 +46,14 @@ const Contact = () => {
                                     <textarea rows="6" value={formDetails.message} placeholder="Message" ></textarea>
                                     <button><span>{buttonText}</span></button>
                                 </Col>
+
+                                {
+                                    status.message &&
+                                    <Col>
+                                        <p className={status.success === false ? "danger" : "success"}>{status.message}</p>
+                                    </Col>
+                                }
+
                             </Row>
                         </form>
                     </Col>
