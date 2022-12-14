@@ -12,6 +12,7 @@ const Contact = () => {
     };
 
     const [formDetails, setFormDetails] = useState(formInitialDetails);
+    const [buttonText, setButtonText] = useState('Send');
 
     return (
         <section className='contact' id="contact" >
@@ -42,7 +43,7 @@ const Contact = () => {
 
                                 <Col size={12} className="px-1">
                                     <textarea rows="6" value={formDetails.message} placeholder="Message" ></textarea>
-                                    <button><span>Send</span></button>
+                                    <button><span>{buttonText}</span></button>
                                 </Col>
                             </Row>
                         </form>
