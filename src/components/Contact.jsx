@@ -1,4 +1,5 @@
 import { Container, Row, Col } from 'react-bootstrap';
+import contactImg from '../assets/img/contact-img.svg';
 
 const Contact = () => {
     return (
@@ -6,7 +7,7 @@ const Contact = () => {
             <Container>
                 <Row className="align-items-center">
                     <Col size={12} md={6}>
-                        <img src={''} alt="Contact Us" />
+                        <img src={contactImg} alt="Contact Us" />
                     </Col>
                     <Col size={12} md={6}>
                         <h2>Get In Touch</h2>
